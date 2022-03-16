@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deliverize</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img class="logo" src="./images/logo.svg" alt="" />
+
+        <div class="address-delivery">
+          <p>Entrega:</p>
+          <strong>R. Antonio Braune, 222</strong>
+          <img src="./images/arrow.svg" alt="" />
+        </div>
+
+        <form>
+          <input
+            type="text"
+            placeholder="Busque por estabelecimento ou produtos"
+          />
+        </form>
+
+        <div class="account-login">
+          <img src="./images/account-login.svg" alt="" />
+          <p>Entrar</p>
+        </div>
+
+        <div class="shopping-cart">
+          <img src="./images/shopping-cart.svg" alt="" />
+          <p>Carrinho</p>
+        </div>
+      </header>
+
+      <main>
+        <section>
+          <img src="./images/hamburguer.svg" alt="" />
+          <h1>Oferta Picanha Cheddar Bacon</h1>
+          <p>
+            Hambúrguer de picanha, molho de picanha, cebola crispy, bacon,
+            queijo cheddar, molho cheddar e pão mix de gergelim
+          </p>
+
+          <div class="price">
+            <h2><strong>R$ 31,99</strong></h2>
+            <p>R$ 34,95</p>
+          </div>
+        </section>
+
+        <aside>
+          <div class="ingredients">
+            <div class="quantity-ingredients">
+              <strong>Adicionar ingredientes</strong>
+              <p>Até 8 ingredientes.</p>
+            </div>
+
+            <div class="products">
+              <h3>Queijo cheddar <strong>+ R$4,99</strong></h3>
+            </div>
+            <div class="add-items">
+              <button id="decrement">-</button>
+              <span id="count">0</span>
+              <button id="increment">+</button>
+            </div>
+            <div class="line"></div>
+
+            <div class="products">
+              <h3>Cebola crispy <strong>+ R$1,50</strong></h3>
+            </div>
+            <div class="add-items">
+              <button id="decrement">-</button>
+              <span id="count">0</span>
+              <button id="increment">+</button>
+            </div>
+            <div class="line"></div>
+
+            <div class="products">
+              <h3>Molho cheddar <strong>+ R$3,50</strong></h3>
+            </div>
+            <div class="add-items">
+              <button id="decrement">-</button>
+              <span id="count">0</span>
+              <button id="increment">+</button>
+            </div>
+            <div class="line"></div>
+
+            <div class="products">
+              <h3>Molho de picanha <strong class="p">+ R$3,50</strong></h3>
+            </div>
+            <div class="add-items">
+              <button id="decrement">-</button>
+              <span id="count">0</span>
+              <button id="increment">+</button>
+            </div>
+            <div class="line"></div>
+
+            <div class="cutlery">
+              <h5>Precisa de talher?</h5>
+            </div>
+
+            <div class="add-cutlery">
+              <button id="decrement">-</button>
+              <span id="count">0</span>
+              <button id="increment">+</button>
+            </div>
+
+            <a href="" class="button">Adicionar</a>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>

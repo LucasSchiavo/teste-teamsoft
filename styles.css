@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 80px;
+  padding: 12px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.container header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container header .logo {
+  width: 250px;
+  height: 50px;
+  background-size: cover;
+  background-position: no-repeat;
+}
+
+.container input {
+  width: 300px;
+  height: 40px;
+  border: 1px solid red;
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.address-delivery {
+  border: 5px white solid;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.address-delivery p {
+  color: #d80000;
+}
+
+.address-delivery strong {
+  color: #656363;
+}
+
+.account-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account-login p {
+  color: #ed3237;
+}
+
+.shopping-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopping-cart p {
+  color: #ed3237;
+}
+
+main section {
+  margin-top: 100px;
+}
+
+main section h1 {
+  color: #4e4e4e;
+  margin-left: 70px;
+  font-size: 1.75rem;
+}
+
+main section p {
+  margin-left: 70px;
+  margin-top: 20px;
+  color: #4e4e4e;
+  width: 550px;
+  font-size: 1.25rem;
+}
+
+main section h2 {
+  margin-left: 70px;
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+main section strong {
+  color: #dc6e05;
+}
+
+main section aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price p {
+  font-size: 1.75rem;
+  text-decoration: line-through;
+  margin-left: 15px;
+}
+
+.ingredients {
+  border: 1px solid #686868;
+  width: 500px;
+  position: absolute;
+  left: 740px;
+  bottom: -80px;
+  padding: 32px;
+  border-radius: 4px;
+  height: 600px;
+}
+
+.quantity-ingredients {
+  background: rgba(253, 215, 14, 0.2);
+  height: 55px;
+  padding-top: 10px;
+}
+
+.quantity-ingredients strong {
+  font-style: normal;
+  color: #4e4e4e;
+  font-size: 1rem;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.quantity-ingredients p {
+  color: #e49700;
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+.products h3 {
+  margin-left: 20px;
+  margin-top: 18px;
+  color: #4e4e4e;
+  font-size: 15px;
+}
+
+.products strong {
+  color: #f09035;
+}
+
+.add-items {
+  margin-left: 10px;
+  border: 1px solid #f09035;
+  border-radius: 4px;
+  width: 88px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 300px;
+}
+
+.add-items button {
+  margin: 0 auto;
+  padding: 3px;
+}
+
+.line {
+  border-bottom: 1px solid #e8a634;
+  margin-top: 50px;
+  width: 400px;
+  margin: 40px auto;
+}
+
+.cutlery {
+  background: rgba(253, 215, 14, 0.2);
+  height: 55px;
+  padding-top: 10px;
+  margin-top: -30px;
+}
+
+.cutlery h5 {
+  color: #4e4e4e;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.add-cutlery {
+  margin-left: 10px;
+  border: 1px solid #f09035;
+  border-radius: 4px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.add-cutlery button {
+  margin: 0 auto;
+  padding: 3px;
+}
+
+.button {
+  border: 1px solid #f09035;
+  background-color: #f09035;
+  color: white;
+  position: absolute;
+  left: 220px;
+  bottom: 28px;
+  margin: 0 auto;
+  padding: 10px 3px;
+  height: 40px;
+  width: 245px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 720px) {
+  .container {
+    width: 100%;
+  }
+
+  .address-delivery,
+  .account-login,
+  .shopping-cart,
+  form {
+    display: none;
+  }
+
+  section img {
+    display: flex;
+    justify-content: center;
+    margin-left: -30px;
+  }
+
+  main section h1 {
+    color: #4e4e4e;
+    margin-left: 70px;
+    font-size: 1.75rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main section p {
+    margin-left: 70px;
+    margin-top: 20px;
+    color: #4e4e4e;
+    width: 400px;
+    font-size: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main section h2 {
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 100%;
+  }
+
+  .ingredients {
+    position: absolute;
+    top: 750px;
+    left: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .address-delivery,
+  .account-login,
+  .shopping-cart,
+  form {
+    display: none;
+  }
+
+  section img {
+    display: flex;
+    justify-content: center;
+    margin-left: -30px;
+  }
+
+  main section h1 {
+    color: #4e4e4e;
+    margin-left: 70px;
+    font-size: 1.75rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main section p {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #4e4e4e;
+    width: 500px;
+    font-size: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main section h2 {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 100%;
+  }
+
+  .ingredients {
+    position: absolute;
+    top: 750px;
+    left: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+  .address-delivery,
+  .account-login,
+  .shopping-cart,
+  form {
+    display: none;
+  }
+
+  section img {
+    display: flex;
+    justify-content: center;
+    margin-left: -70px;
+  }
+
+  main section h1 {
+    color: #4e4e4e;
+    margin-left: 20px;
+    font-size: 1.75rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main section p {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #4e4e4e;
+    width: 400px;
+    font-size: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  main section h2 {
+    margin-left: 70px;
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 100%;
+  }
+
+  .ingredients {
+    position: absolute;
+    top: 750px;
+    left: 5px;
+    width: 500px;
+  }
+}
